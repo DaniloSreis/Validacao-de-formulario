@@ -7,7 +7,7 @@ function verificar(event) {
   dados[event.target.name] = event.target.value
   if (!valor.checkValidity()) {
     valor.classList.add('invalido')
-    formulario.email.setCustomValidity('Por favor, coloque o @')
+    formulario.email.setCustomValidity('algo está errado, verifique o e-mail)
     valor.nextElementSibling.innerText = valor.validationMessage
   } else {
     valor.classList.remove('invalido')
